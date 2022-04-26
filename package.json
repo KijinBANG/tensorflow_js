@@ -1,0 +1,28 @@
+{
+  "name": "kijin",
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.16.0",
+    "typescript": "^4.6.3"
+  },
+  "description": "TensorFlow JavaScript",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "tensorflow_js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KijinBANG/tensorflow_js.git"
+  },
+  "keywords": [
+    "tensorflow_js"
+  ],
+  "author": "kijinBANG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KijinBANG/tensorflow_js/issues"
+  },
+  "homepage": "https://github.com/KijinBANG/tensorflow_js#readme"
+}
