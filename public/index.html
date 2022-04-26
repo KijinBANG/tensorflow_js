@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>imageViewer</title>
+</head>
+<body>
+<img id="img1" src="./car01.jpg">
+<img id="img2" src="./bass.jpg">
+<img id="img3" src="./brain.jpg">
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflowmodels/mobilenet@1.0.0">
+</script>
+<script>
+    const img = document.getElementById('img');
+    // Load the model.
+    mobilenet.load().then(model => {
+// Classify the image.
+        model.classify(img).then(predictions => {
+            console.log('Predictions: ');
+            console.log(predictions);
+        });
+    });
+</script>
+</body>
+</html>
